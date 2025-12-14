@@ -8,7 +8,5 @@
     - name: Trigger when index is 27
       condition: event.i == 27
       action:
-        run_module:
-          name: ansible.builtin.debug
-          module_args:
-            msg: "I am learning to write a rulebook as a part of training"
+        debug:
+          msg: "I am learning to write a rulebook as a part of training"
